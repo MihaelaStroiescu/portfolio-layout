@@ -1,0 +1,424 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    left: 0;
+    top: 0;
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    height: 100%;
+    
+}
+
+h1 {
+    border-bottom: 1px solid rgb(128, 128, 128);
+    font-size: 1.5rem;
+    padding: 0 0 15px;
+}
+
+h3 {
+    font-size: 1.1rem;
+    padding: 15px 0 15px;
+    border-bottom: 1px solid rgb(128, 128, 128);
+    color: rgb(85, 79, 79);
+}
+
+.fas {
+    font-size: 1.3rem;
+}
+
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    z-index: 99;
+}
+
+.app-header {
+    background-color: rgb(247, 247, 247);
+    box-shadow: 0 8px 6px -6px rgb(128, 128, 128);
+    height: 50px;
+}
+
+.section-header {    
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;      
+}
+
+.logo-container {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo-container a {
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav a {
+    color: rgb(148, 148, 148);
+    font-weight: bolder;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.nav a:active {
+    color: rgb(19, 18, 18);
+    text-decoration: none;
+}
+
+.main-container {       
+    width: 80%;
+    margin: 0 auto;   
+}
+
+.section-presentation {
+    position: relative;
+    background-image: url(../images/office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column; 
+}
+
+.presentation {
+    position: absolute;
+    top: 12rem;
+    left: 12rem;
+}
+
+.presentation p {
+    padding: 15px 0;
+    font-size: 20px;
+}
+
+.social-media-icons {    
+    display: flex;
+    margin: 15px 0 25px;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.social-media-icons a {
+    text-decoration: none;
+    color: rgb(51, 49, 49);
+}
+ 
+.btn-white {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.btn-white .fas {
+    font-size: 18px;
+    padding-left: 10px;
+} 
+
+.section-about {
+    background-color: rgb(255, 255, 255);
+}
+
+.about-page {
+   width: 100%;
+   overflow: hidden;
+}
+
+.u-about-heading{   
+    position: relative;
+    padding: 70px 0 20px;
+    margin-bottom: 40px;
+    text-align: center;
+
+}
+
+.u-about-heading::before {
+    content: '';
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 1px;
+    width: 250px;
+}
+
+.u-about-heading::after {
+    content: '';
+    width: 60px;
+    height: 2px;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 30px);
+}
+
+.about-paragraph {
+    font-size: 1rem;
+    line-height: 1.8;
+    float: left;
+    padding: 0 5rem 0 10rem;
+    width: 70%;
+}
+
+.about-paragraph p {
+    padding-bottom: 10px;
+}
+
+.about-paragraph::after {
+    content: ""; 
+    visibility: hidden; 
+    display: table;  
+    clear: both;
+}
+
+.about-image {
+    margin: 0 5rem 2rem 0;
+    border: 5px solid rgb(190, 176, 176);
+    box-shadow: 10px 10px 10px rgb(148, 148, 148);
+    border-radius: 10px;
+    float: left;
+    width: 170px;
+} 
+
+.about-image::after {
+    content: ""; 
+    visibility: hidden; 
+    display: table;  
+    clear: both;
+}
+
+.btn-black {
+    background-color: rgb(41, 39, 39);
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    border-radius: 15px;
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin: 20px 0 40px;
+    width: 12rem;
+}
+
+.section-experience {
+    background-color: rgb(239, 239, 240);
+    padding: 20px 0 40px; 
+}
+
+.time-line {
+    display: flex;
+    
+}
+
+.time-line-entry {
+    align-self: flex-start;
+    font-size: 0.7rem;
+    padding: 10px 40px;
+}
+
+.time-line-entry:not(:last-child) {  
+    border-right: 1px solid grey;
+}
+
+.experience-heading {
+    display: block;
+   text-align: center;
+   border-bottom: 1px solid grey;
+   width: 100px;
+}
+
+.time-line-entry p {
+   font-size: 0.9rem;
+   padding-bottom: 10px;
+}
+
+
+.section-portfolio {
+    background-color: rgb(255, 255, 255);
+    padding: 20px 0 40px;
+}
+
+.portfolio-wrapper {
+    display: flex;
+    align-content: flex-end;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.portfolio-item {
+    border: 2px solid rgb(201, 199, 199);
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.footer-wrapper {
+    width: 80%;
+    background-color: rgb(239, 239, 240);
+    border-top: 1px solid rgb(201, 199, 199);
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.u-footer-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.info-group {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.border-right {   
+    border-right: 1px solid rgb(201, 199, 199);
+    border-left: 1px solid rgb(201, 199, 199);
+    padding: 0 80px;
+}
+
+.footer-icon {
+    font-size: 35px;
+    padding-bottom: 20px;
+    color: rgb(117, 109, 109);
+}
+
+.info-group > p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.footer-bottom {
+    background-color: black;
+    height: 50px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.footer-bottom p {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.fa-arrow-alt-circle-up {
+    position: absolute;
+    font-size: 25px;
+    top: 12px;
+    right: 15px;
+    color: white;
+}
+
+/* contact page */
+
+.contact-container {
+    position: relative;
+    width: 80%;
+    margin: 50px auto 0;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.form-container {  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.personal-data {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 40%;
+}
+
+fieldset {
+    width: 80%;
+    margin: 20px auto 20px;
+    padding: 20px;
+    background-color: rgb(247, 247, 247);
+    border: 1px solid grey;
+    border-radius: 15px;
+}
+
+.message {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 40%;
+}
+
+fieldset label, .message label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+fieldset input, .message textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+.btn-submit {
+    align-self: flex-end;
+}
+
+.btn-submit button {
+    padding: 10px;
+    margin: 30px 0;
+    border-radius: 10px;
+    border: 1px solid grey;
+    background-color: rgb(97, 173, 235);
+    color: white;
+} 
+
+.social-media-icons-contact {
+    width: 50%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.social-media-icons-contact .fab {
+    font-size: 30px;
+    color: rgb(97, 173, 235);
+}
